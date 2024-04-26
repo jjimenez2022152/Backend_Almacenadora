@@ -32,3 +32,26 @@ export const tareaPost = async (req, res) => {
     }
 };
 
+export const tareaDelete = async (req, res) =>{
+    const {id} = req.params;
+    const tarea = await Tarea.findByIdAndUpdate(id, {estado:false});
+    const tareaAuntenticada = req.tarea;
+
+    res.status(200).json({
+        msg: 'Tarea a eliminar',
+        tarea,
+        tareaAuntenticada
+    })
+}
+
+export const putTarea = async (req, res = respone) =>{
+    const {id} = req.params;
+    const {_id, ...resto} = req.body;
+
+    const tarea = await Tarea.findByIdAndUpdate(id, resto);
+    res.status(200).json({
+        msg: 'Tarea actualizada exitosamente!!',
+        tarea
+    })
+}
+
