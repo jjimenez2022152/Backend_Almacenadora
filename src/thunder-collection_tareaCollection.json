@@ -1,0 +1,40 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "tareaCollection",
+    "collectionId": "508b2c1c-67ab-4427-800c-74026623a9fc",
+    "dateExported": "2024-04-26T03:47:37.972Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "48247a15-098d-4b4e-89c7-5f66f298b91f",
+            "colId": "508b2c1c-67ab-4427-800c-74026623a9fc",
+            "containerId": "",
+            "name": "tareaPost",
+            "url": "http://localhost:8080/almacenadora/v1/tarea",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-26T03:42:55.606Z",
+            "modified": "2024-04-26T03:43:35.373Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"nombre\": \"Tarea de ejemplo\",\r\n  \"descripcion\": \"Esta es una tarea de ejemplo\",\r\n  \"fechaInicio\": \"2024-04-25T08:00:00.000Z\",\r\n  \"fechaCierre\": \"2024-04-26T17:00:00.000Z\",\r\n  \"creador\": \"Juan Perez\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "49b13e65-88c8-40ef-9b38-706748c649b3",
+            "colId": "508b2c1c-67ab-4427-800c-74026623a9fc",
+            "containerId": "",
+            "name": "tareaGet",
+            "url": "http://localhost:8080/almacenadora/v1/tarea",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-26T03:45:48.877Z",
+            "modified": "2024-04-26T03:45:56.982Z",
+            "headers": []
+        }
+    ],
+    "ref": "AMNL9dZ_lf_UV-VedP6lWBP7N_5QExFba6YSBXcImric-SsDnMiKEgp7yoYEdfDOM37SPiz9CcRYX9KLMa8tag"
+}
